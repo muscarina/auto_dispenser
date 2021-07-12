@@ -57,10 +57,10 @@ void loop(void)
 
    }
    else{
-         if(led_status == 1) { //LED is OFF
+         if(led_status == 1) { //LED is ON
             Serial.println("Temp >= 30C, LED OFF.");
             led_status = 0;
-            digitalWrite(led, LOW); // turn the LED on (HIGH is the voltage level)
+            digitalWrite(led, LOW); // turn the LED off (LOW is the voltage level)
            }
            
 
